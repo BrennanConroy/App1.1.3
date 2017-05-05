@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    @foreach (var assembly in ViewData["Message"] as List<string>)
+    {
+        <div>@assembly</div>
+    }
+</div>
